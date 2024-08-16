@@ -1,0 +1,36 @@
+/* .header{
+    background-color: grey;
+    height: 100px;
+  }
+  */
+
+
+  .header {
+    display: flex;
+    justify-content: space-between; 
+    /* align-items: center;  */
+    padding: 10px 25px ; 
+    background-color: grey; /* Background color for the header */
+    /* border-bottom: 1px solid #ddd; A subtle border to separate the header */
+    height: 100px;
+  }
+  
+  .home-icon, .cart-icon {
+    display: flex;
+    align-items: center; /* Center the icons vertically */
+  }
+  
+  .home-icon a, .cart-icon a {
+    color: inherit; /* Ensure the link color inherits from the parent */
+    text-decoration: none; /* Remove underline from the links */
+  }
+  
+  .home-icon svg, .cart-icon svg {
+    font-size: 2rem; 
+    transition: color 0.3s; 
+}
+  
+  .home-icon svg:hover, .cart-icon svg:hover {
+    color: #007bff; 
+  }
+  
