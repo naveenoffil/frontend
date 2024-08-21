@@ -1,5 +1,5 @@
 import { put, takeEvery } from "redux-saga/effects";
-import { ADD_TO_CART_REQUEST } from "./CartActionTypes";
+import { ADD_TO_CART_REQUEST, GET_CART_PRODUCT_REQUEST } from "./CartActionTypes";
 import axios from "axios";
 import { addToCartError, addToCartResponse } from "./CartAction";
 
@@ -13,9 +13,14 @@ function* addToCartRequestSaga ({data}) {
     }
 }
 
+function* getCartProductsRequestSaga() {
+    
+}
+
 
 function* cartSaga(){
     yield takeEvery(ADD_TO_CART_REQUEST, addToCartRequestSaga)
+    yield takeEvery(GET_CART_PRODUCT_REQUEST, getCartProductsRequestSaga)
 }
 
 export default cartSaga;
